@@ -1,0 +1,136 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 25px 0;
+  background: #080808;
+  color: white;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  width: min(960px, 96vw);
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: 6px;
+  margin: 0 0 5px;
+}
+
+.subtitle {
+  color: #888;
+  letter-spacing: 5px;
+  font-size: 12px;
+  margin: 0 0 20px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #555;
+  padding: 12px 25px;
+  margin-bottom: 12px;
+  background: #111;
+}
+
+.player-score {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.player-score strong {
+  font-size: 30px;
+}
+
+.red strong {
+  color: #ff5555;
+}
+
+.blue strong {
+  color: #55aaff;
+}
+
+.round-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 11px;
+  color: #aaa;
+}
+
+.round-info strong {
+  color: white;
+  font-size: 16px;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid #555;
+  background: #111;
+}
+
+.instructions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 15px;
+  color: #999;
+  font-size: 11px;
+  line-height: 2;
+}
+
+.instructions div {
+  flex: 1;
+}
+
+.instructions strong {
+  display: block;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.footer {
+  margin-top: 15px;
+  color: #666;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 23px;
+  }
+
+  .scoreboard {
+    padding: 8px;
+  }
+
+  .player-score {
+    gap: 5px;
+    font-size: 9px;
+  }
+
+  .player-score strong {
+    font-size: 22px;
+  }
+
+  .instructions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLACKOUT FIGHTERS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <header>
+      <h1>BLACKOUT FIGHTERS</h1>
+      <p class="subtitle">ARCADE CHAMPIONSHIP</p>
+    </header>
+
+    <section class="scoreboard">
+      <div class="player-score red">
+        <span>RED FIGHTER</span>
+        <strong id="left-score">0</strong>
+      </div>
+
+      <div class="round-info">
+        <span>FIRST TO 3</span>
+        <strong id="round-status">SELECT MODE</strong>
+      </div>
+
+      <div class="player-score blue">
+        <span>BLUE FIGHTER</span>
+        <strong id="right-score">0</strong>
+      </div>
+    </section>
+
+    <canvas id="game" width="960" height="540"></canvas>
+
+    <section class="instructions">
+      <div>
+        <strong>RED PLAYER</strong>
+        A/D MOVE · W JUMP OR MOVE UP · S DUCK OR MOVE DOWN
+        <br>
+        R PUNCH · Q HIGH KICK · E BLOCK
+      </div>
+
+      <div>
+        <strong>BLUE PLAYER</strong>
+        ←/→ MOVE · ↑ JUMP OR MOVE UP · ↓ DUCK OR MOVE DOWN
+        <br>
+        I PUNCH · P HIGH KICK · O BLOCK
+      </div>
+    </section>
+
+    <p class="footer">
+      FUNNY: 3 HITS · NOT FUNNY: 5 HITS · FIRST TO 3 KOs WINS · M = MENU
+    </p>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
